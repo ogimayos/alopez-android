@@ -32,36 +32,7 @@ public void removeHolderPosition(int id){
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 this.vv = convertView;
-        //////Primera forma begin
-//        Cliente cliente = getItem(position);
-//
-//            LayoutInflater inflater = LayoutInflater.from(getContext());
-//
-//
-//        View item = inflater.inflate(R.layout.listado_clientes_view, null);
-//        TextView Nombre = (TextView)item.findViewById(R.id.LblNombre);
-//        Nombre.setText(cliente.getNombre());
-//        TextView Telefono = (TextView)item.findViewById(R.id.LblTelefono);
-//        Telefono.setText(cliente.getTelefono());
-//        TextView Email = (TextView)item.findViewById(R.id.LblEmail);
-//            Email.setText(cliente.getEmail());
-        //////primera forma end
 
-
-        //////segunda forma con la optimizacion de la carga y del inflater begin
-//        View item = convertView;
-//        Cliente cliente = getItem(position);
-//        if(item == null){
-//            LayoutInflater inflater =   ((Activity)getContext()).getLayoutInflater();
-//            item = inflater.inflate(R.layout.listado_clientes_view, null);
-//        }
-//        TextView Nombre = (TextView)item.findViewById(R.id.LblNombre);
-//        Nombre.setText(cliente.getNombre());
-//        TextView Telefono = (TextView)item.findViewById(R.id.LblTelefono);
-//        Telefono.setText(cliente.getTelefono());
-//        TextView Email = (TextView)item.findViewById(R.id.LblEmail);
-//            Email.setText(cliente.getEmail());
-        //////segunda forma con la optimizacion de la carga y del inflater end
 
 
         //////Tercera forma con optimizacion incluso de objetos del frame BEGIN

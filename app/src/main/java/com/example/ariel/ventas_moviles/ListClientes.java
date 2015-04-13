@@ -101,50 +101,7 @@ public class ListClientes extends ActionBarActivity {
                                  Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_list_clientes, container, false);
 
-            //PRIMERA OPCION BEGIN
-            //resultAdapter = new ResultAdapter(getActivity(), null, 0);
 
-            //ListView listView = (ListView)rootView.findViewById(R.id.result_list_view);
-
-            //listView.setAdapter( resultAdapter);
-//PRIMERA OPCION END
-
-            //SEGUNDA OPCION BEGIN
-/*
-            final ListView listview = (ListView) rootView.findViewById(R.id.result_list_view);
-            String[] values = new String[] { "ariel1", "Android", "iPhone", "WindowsMobile",
-                    "Blackberry", "WebOS", "Ubuntu", "Windows7", "Max OS X",
-                    "Linux", "OS/2", "Ubuntu", "Windows7", "Max OS X", "Linux",
-                    "OS/2", "Ubuntu", "Windows7", "Max OS X", "Linux", "OS/2",
-                    "Android", "iPhone", "WindowsMobile", "ariel2" };
-
-            final ArrayList<String> list = new ArrayList<String>();
-            for (int i = 0; i < values.length; ++i) {
-                list.add(values[i]);
-            }
-
-
-            final StableArrayAdapter adapter = new StableArrayAdapter(getActivity(),
-                    android.R.layout.simple_list_item_1, list);
-
-            listview.setAdapter(adapter);
-
-            listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-
-                @Override
-                public void onItemClick(AdapterView<?> parent, final View view,
-                                        int position, long id) {
-                    final String item = (String) parent.getItemAtPosition(position);
-
-
-                                    list.remove(item);
-                                    adapter.notifyDataSetChanged();
-
-                }
-
-            });
-*/
-//SEGUNDA OPCION END
 
 //OTRA OPCION BEGIN
 
@@ -196,8 +153,7 @@ public class ListClientes extends ActionBarActivity {
                 int colTelefono = cur.getColumnIndex(ClientesProvider.Clientes.COL_TELEFONO);
                 int colEmail = cur.getColumnIndex(ClientesProvider.Clientes.COL_EMAIL);
 
-                //TextView txtResultados = (TextView) getView().findViewById(R.id.details_text);
-                //txtResultados.setText("");
+
 
                 do {
 
@@ -235,13 +191,7 @@ Cliente c = new Cliente(nombre,telefono,email, ID);
             //ResultAdapter resultAdapter4 = new ResultAdapter(getActivity(), null, 0);
  clientes = new ClientesAdapter(getActivity(),arrayClientes);
 
-            //otro adaptador para prueba end
 
-            //otro nuevo begin
-            //ResultAdapter adaptador4 = new ResultAdapter(getActivity(),cur,0);
-            //otro nuevo end
-            //listview2.setAdapter(resultAdapter4);
-            //listview2.setAdapter(adaptador3);
 
             listview2.setAdapter(clientes);
             //OTRA OPCION END
@@ -249,19 +199,7 @@ Cliente c = new Cliente(nombre,telefono,email, ID);
             /** Registering context menu for the listview */
             registerForContextMenu(listview2);
 
-            ////Una forma de hacer una acciond e borrado sosteniendo un item
-            ///----------------------------------------------------------------
-//            listview2.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
-//                @Override
-//                public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
-//                    arrayClientes.remove(position);
-//                    clientes.notifyDataSetChanged();
-//                    clientes.notifyDataSetInvalidated();
-//                    return false;
-//                }
-//            });
 
-            //agregamos un context menu end
 db.close();
             return rootView;
 

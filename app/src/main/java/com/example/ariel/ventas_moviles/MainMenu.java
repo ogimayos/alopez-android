@@ -75,9 +75,7 @@ public class MainMenu extends ActionBarActivity {
 
                 }
             });
-            //Intent mainmenu = new Intent(getActivity(), MainMenu.class);
 
-            //startActivity(mainmenu);
             return rootView;
         }
     }

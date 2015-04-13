@@ -136,16 +136,14 @@ Uri newUri = null;
             where = "_id=" + uri.getLastPathSegment();
         }
 
-        //SQLiteDatabase db = clidbh.getWritableDatabase();
 
-        //cont = db.delete(TABLA_CLIENTES, where, selectionArgs);
         if (match == CLIENTES) {
             //deleted = db.delete(TABLA_CLIENTES, selection, selectionArgs);
             deleted = db.delete(TABLA_CLIENTES, "", null);
         } else {
             throw new UnsupportedOperationException("Unknown uri: " + uri);
         }
-        //cont = db.delete(TABLA_CLIENTES,"",null);
+        
 
         if (deleted != 0)
             getContext().getContentResolver().notifyChange(uri, null);

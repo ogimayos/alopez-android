@@ -47,15 +47,7 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.activity_main);
 
 
-        //btnLogin.setOnClickListener(new View.OnClickListener(){
-            //@Override
-           // public void onClick(View v){
-                //Utilities u = new Utilities();
-//validar(txtUsername.getText().toString(), txtPass.getText().toString());
 
-          //  }
-        //});
-  //end se obtienen los datos
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
                     .add(R.id.container, new PlaceholderFragment())
@@ -73,9 +65,7 @@ public class MainActivity extends ActionBarActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
+
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
@@ -119,11 +109,9 @@ public class MainActivity extends ActionBarActivity {
             });
             return rootView;
         }
-private boolean validar(String username, String pass){
-    return true;
-}
+
         ////
-        private boolean validar2(String username, String pass){
+        private boolean validar(String username, String pass){
         /* Comprobamos que no venga alguno en blanco. */
             if (!username.equals("") && !pass.equals("")){
             /* Creamos el objeto cliente que realiza la petición al servidor */
@@ -133,8 +121,7 @@ private boolean validar(String username, String pass){
                 HttpPost post = new HttpPost("http://192.168.1.4:9090/json/jsonariel.php");
 
                 try{
-                /* Defino los parámetros que enviaré. Primero el nombre del parámetro, seguido por el valor. Es lo mismo que hacer un
-                 http://192.168.0.142:8080/marcoWeb/Login?username=mario&pass=maritoPass&convertir=no */
+
                     List<NameValuePair> nvp = new ArrayList<NameValuePair>(2);
                     nvp.add(new BasicNameValuePair("username", username));
                 /* Encripto la contraseña en MD5. Definición más abajo */
