@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.ariel.ventas_moviles.RegClientes$PlaceholderFragment">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtNombres"
+        android:drawableLeft="@drawable/ic_usuario"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="NOMBRES" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtTelefono"
+        android:drawableLeft="@drawable/ic_phone"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="TELEFONO"
+        android:layout_below="@+id/txtNombres"
+        android:layout_alignLeft="@+id/txtNombres"
+        android:layout_alignStart="@+id/txtNombres" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtEmail"
+        android:drawableLeft="@drawable/ic_mail"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="EMAIL"
+        android:layout_below="@+id/txtTelefono"
+        android:layout_alignLeft="@+id/txtTelefono"
+        android:layout_alignStart="@+id/txtTelefono" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insertar"
+        android:id="@+id/btnRegClientes"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="96dp"
+        android:layout_below="@+id/txtEmail"
+        android:background="@drawable/gradient"/>
+
+
+</RelativeLayout>

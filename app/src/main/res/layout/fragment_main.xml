@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+
+    tools:context=".MainActivity$PlaceholderFragment"
+    android:background="@drawable/gradient"
+
+    >
+
+
+
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/username"
+        android:id="@+id/txtUsername"
+        android:layout_marginTop="50px"
+
+android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+
+        android:id="@+id/txtPass"
+        android:layout_below="@+id/txtUsername"
+        android:layout_alignLeft="@+id/txtUsername"
+        android:layout_alignStart="@+id/txtUsername"
+        android:ems="10"
+
+        android:hint="PASSWORD"
+        android:textStyle="bold"
+        android:textColorHighlight="#0038ff00" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INGRESAR"
+        android:id="@+id/btnLogin"
+        android:layout_below="@+id/txtPass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:drawableLeft="@drawable/ic_intro"
+style="@style/Widget.AppCompat.Toolbar.Button.Navigation"
+
+        android:textStyle="bold"
+        android:textSize="20px" />
+
+</RelativeLayout>

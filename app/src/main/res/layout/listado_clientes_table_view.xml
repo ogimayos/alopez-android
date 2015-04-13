@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TableRow>
+
+
+    <ImageView android:src="@drawable/ic_person"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+
+        />
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+    <TextView android:id="@+id/LblNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="uno"
+
+        />
+
+    <TextView android:id="@+id/LblTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:textSize="12sp"
+        android:text="dos"/>
+    <TextView android:id="@+id/LblEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:textSize="12sp"
+        android:text="tres"
+        />
+</LinearLayout>
+        </TableRow>
+    </TableLayout>
+    </LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ventas-moviles</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="username">USUARIO</string>
+    <string name="title_activity_login">login</string>
+    <string name="title_activity_main_menu">MainMenu</string>
+    <string name="title_activity_reg_clientes">Registro de Clientes</string>
+    <string name="title_activity_list_clientes">Lista de Clientes</string>
+    <string name="mnuRegClientes">Registro Clientes</string>
+
+</resources>
